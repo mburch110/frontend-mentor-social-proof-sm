@@ -1,5 +1,85 @@
 @use "../abstracts" as a;
 
-.l-body {
-  font-family: a.$font-spartan;
+.c-headline {
+  color: a.$cl-very-dark-magenta;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 23px;
+}
+
+.c-header {
+  text-align: center;
+}
+
+.c-header__text {
+  color: a.$cl-dark-grayish-magenta;
+  line-height: 23px;
+  margin-bottom: 40px;
+}
+
+.c-ratings {
+  margin-bottom: 49px;
+}
+
+.c-rating {
+  background: a.$cl-light-grayish-magenta;
+  color: a.$cl-very-dark-magenta;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.c-rating + .c-rating {
+  margin-top: 16px;
+}
+
+.c-rating__stars {
+  width: 100px;
+  height: 31px;
+  margin: 0 auto;
+  background-image: url("../images/icon-star.svg");
+  background-repeat: space no-repeat;
+}
+
+.c-rating__text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.c-approval {
+  color: #fff;
+  background: a.$cl-very-dark-magenta;
+  padding: 40px 32px 31px 32px;
+  border-radius: 5px;
+}
+
+.c-approval + .c-approval {
+  margin-top: 16px;
+}
+
+.c-approval__header {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.c-approval__image {
+  border-radius: 50%;
+  height: 39px;
+  margin-right: 23px;
+}
+
+.c-approval__headline {
+  font-size: 13px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.c-approval__status {
+  font-size: 13px;
+  color: a.$cl-soft-pink;
+}
+
+.c-approval__text {
+  line-height: 22px;
+  font-size: 13px;
 }

@@ -1,1 +1,15 @@
 @use "../abstracts" as a;
+
+.l-body {
+  background: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 0, bottom 0 right 0;
+  font-family: a.$font-spartan;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 82px 24px;
+  margin: 0;
+}
