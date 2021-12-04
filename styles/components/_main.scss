@@ -8,7 +8,7 @@
     grid-template-areas:
       "header ratings"
       "approvals approvals";
-    margin-top: 129px;
+    // margin-top: 0;
   }
 }
 
@@ -20,7 +20,7 @@
   @media (min-width: a.$media-desktop-max) {
     font-size: 47px;
     line-height: 49px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 }
 
@@ -38,9 +38,10 @@
   color: a.$cl-dark-grayish-magenta;
   line-height: 23px;
   margin-bottom: 40px;
+  font-size: 15px;
   font-weight: 500;
   @media (min-width: a.$media-desktop-max) {
-    line-height: 27px;
+    line-height: 25px;
   }
 }
 
@@ -51,6 +52,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+    padding-left: 93px;
   }
 }
 
@@ -89,12 +91,14 @@
 .c-rating__stars {
   width: 100px;
   height: 31px;
-  @media (min-width: a.$media-desktop-max) {
-    height: 17px;
-  }
   margin: 0 auto;
   background-image: url("../images/icon-star.svg");
   background-repeat: space no-repeat;
+
+  @media (min-width: a.$media-desktop-max) {
+    height: 17px;
+    margin: 0 37px;
+  }
 }
 
 .c-rating__text {
